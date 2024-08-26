@@ -47,8 +47,8 @@
         }
         
         @keyframes jump {
-        0%
-        b0ttom: 0;
+        0% {
+        bottom: 0;
         }
         
         40%{
