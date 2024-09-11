@@ -3,11 +3,14 @@ const pipe = document.querySelector(".pipe");
 const startButton = document.querySeeletor(".start");
 const gameOverScreen = document.querySeletor(".game=over");
 
+audioStart = new Audio("./sound/audio_theme.mp3");
+const gameOverSound = new Audio("./sound/audio_theme.mp3");
+
 let gameStarted = false;
 
 const startGame => {
 gameStarted = true;
-
+audioStart.play();
 pipe.style.animation = ="pipe-animation 1.5s infinite linear";
     
 startButton.style.display = "none";
