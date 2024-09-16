@@ -1,5 +1,6 @@
 const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
+const nuvem = document.querySelector(".nuvem")
 const startButton = document.querySeeletor(".start");
 const gameOverScreen = document.querySeletor(".game=over");
 
@@ -22,7 +23,7 @@ clouds.style.opacity = "1";
 
 const jump = () => {
     mario.classList.add("jump");
-
+    if (gameStarted) { 
     setTimeout(() => {
         mario.classList.remove("jump")
     } 
@@ -32,7 +33,7 @@ const jump = () => {
     const loop = setInterval (() => {
         const pipePosition = pipe.offsetLeft;
         const marioPosition = +window.getComputedStyle(mario).bottom.replace("px", "");
-
+         
         if(pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
             pipe.style.animation = "none";
             pipe.style.left = ${pipePosition}px;
@@ -49,3 +50,6 @@ const jump = () => {
     },10);
         
 document.addEventListener("keydown",jump);
+
+clearInterval(loop);
+gameOverScreen.style.display = "flex";
