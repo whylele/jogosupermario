@@ -18,7 +18,7 @@
         opacity: 0;
         transition: opacity 0.5s ease-in-out;
     }
-    
+    .pipe{
         position: absolute;
         bottom: 0;
         width: 80px;
@@ -50,7 +50,7 @@
        padding: 1rem;
        position: absolute;
        right: 50vw;
-       top: 50vh:
+       top: 50vh;
        cursor: pointer;
        z-index: 1;
 }
@@ -86,10 +86,10 @@ button.start {
 }
     @keyframes pipe-animation {
         from {
-        right: -80px
+        right: -80px;
         }
         to {
-        right: 100%
+        right: 100%;
         }
         }
         
@@ -117,9 +117,9 @@ button.start {
         
         @keyframes clouds-animation {
         from{
-        ritht: 100%;
+        right: 100%;
         }
         to {
-        ritht: 100%;
+        right: 100%;
         }
         }        
