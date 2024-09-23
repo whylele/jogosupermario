@@ -81,6 +81,7 @@ right: 10px;
     font-weight: bold;
     font-size: 30px;
 }
+
 .game-over {
     width: 100%;
     height: 100vh;
@@ -100,42 +101,45 @@ right: 10px;
     text-align: center;
     margin-top: 15rem;
 }
-    @keyframes pipe-animation {
-        from {
+  
+@keyframes pipe-animation{
+    from {
         right: -80px;
-        }
-        to {
+    }
+    
+    to {
         right: 100%;
-        }
-        }
-        
-        @keyframes jump {
-        0% {
+    }
+}  
+
+@keyframes jump {
+    0% {
         bottom: 0;
-        }
-        
-        40%{
-        bottom:180px;
-        }
-        
-        50% {
+    }
+
+    40% {
         bottom: 180px;
-        }
-        
-        60% {
+    }
+
+    50% {
         bottom: 180px;
-        }
-        
-        100% {
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100% {
         bottom: 0;
-        }
-        }
-        
-        @keyframes clouds-animation {
-        from{
+    }
+}
+
+@keyframes clouds-animation {
+    from {
+        right: -550px;
+    }
+
+    to {
         right: 100%;
-        }
-        to {
-        right: 100%;
-        }
-        }        
+    }
+}
