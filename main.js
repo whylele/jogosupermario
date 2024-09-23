@@ -39,6 +39,7 @@ const jump = () => {
         score += 1;
         scoreElement.textContent = score;
       }
+      
     const loop = setInterval (() => {
      const pipePosition = pipe.offsetLeft;
      const marioPosition = window.getComputedStyle(mario).bottom.replace("px","");
