@@ -4,12 +4,12 @@ const nuvem = document.querySelector(".nuvem");
 const startButton = document.querySelector(".start");
 const gameOverScreen = document.querySelector(".game-over");
 
-audioStart = new Audio("./sound/audio_theme.mp3);
-const gameOverSound = new Audio("./sound/audio_gameover.mp3);
+audioStart = new Audio("./sound/audio_theme.mp3");
+const gameOverSound = new Audio("./sound/audio_gameover.mp3");
 
 let gameStarted = false;
 
-const startGame => {
+const startGame = () => {
 gameStarded = true;
 audioStart.play();
 pipe.style.animation = "pipe-animation 1.5s infinite linear";
@@ -51,11 +51,11 @@ const jump = () => {
         gameOverSound.play();
 
     
-
+     }
      clearInterval(loop);
       
     },10);
-
+}
     document.addEventListener("keydown", jump);
 
     const restartGame = () => {
