@@ -7,11 +7,11 @@
     .game-board {
         width: 100%;
         height: 100vh;
-        border-bottom: 15px solid rgb(240, 35, 96);
+        border-bottom: 15px solid rgb(253, 122, 161);
         margin: 0 auto;
         position: relative;
         overflow: hidden;
-        background: linear-gradient(#dc89ec,#e29ad0);
+        background: linear-gradient(#bf54d4,#e777a0);
     }
 
     .pipe, .mario, .nuvem{ 
@@ -55,9 +55,9 @@
 }
 
 button:hover {
-           border: 2px solid rgb(168, 85, 236);
+           border: 2px solid rgb(144, 52, 219);
            background:none;
-           color:rgb(245, 99, 245);
+           color:rgb(247, 77, 247);
        }
 
 button.start {
