@@ -51,7 +51,7 @@ const jump = () => {
         mario.animation = "none";
         mario.style.left = `${mario.Position}px`;
 
-        mario.src = "./img/game-over.png";
+        mario.src = "./img/gameover_hello.png";
         mario.style.width = "75px";
         mario.style.marginLeft = "50px";
         audioStart.pause();
